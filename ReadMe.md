@@ -1,7 +1,7 @@
 dotnet-hash
 ===========
 
-[main-nuget]: https://www.nuget.org/packages/dotnet-hash/
+[main-nuget]: https://www.nuget.org/packages/TheBlueSky.DotNet.Tools.SwiftHash/
 [main-nuget-badge]: https://img.shields.io/nuget/v/TheBlueSky.DotNet.Tools.SwiftHash.svg?style=flat-square&label=nuget
 
 A simple dotnet tool to calculate hashes for the given file.
@@ -40,7 +40,15 @@ For example:
 dotnet hash readme.md --algorithm sha1 --out hex
 ```
 
-Valid values:
+Valid `algorithm`:
 
-* `algorithm`: `md5`, `sha1`, `sha256`, `sha384`, and `sha512`
-* `out`: `base64` and `hex`.
+* `md5`
+* `sha1`
+* `sha256`
+* `sha384`
+* `sha512`
+
+Valid `out`:
+
+* `base64`
+* `hex`.
