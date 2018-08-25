@@ -1,0 +1,9 @@
+{
+	"profiles": {
+		"dotnet-hash": {
+			"commandName": "Project",
+			"commandLineArgs": "--help"
+			//"commandLineArgs": "TheBlueSky.DotNet.Tools.SwiftHash.dll -o hex -a sha1"
+		}
+	}
+}
