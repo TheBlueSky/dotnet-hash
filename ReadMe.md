@@ -1,6 +1,8 @@
 dotnet-hash
 ===========
 
+[![NuGet][main-nuget-badge]][main-nuget]
+
 [main-nuget]: https://www.nuget.org/packages/TheBlueSky.DotNet.Tools.SwiftHash/
 [main-nuget-badge]: https://img.shields.io/nuget/v/TheBlueSky.DotNet.Tools.SwiftHash.svg?style=flat-square&label=nuget
 
@@ -51,4 +53,4 @@ Valid `algorithm`:
 Valid `out`:
 
 * `base64`
-* `hex`.
+* `hex`
