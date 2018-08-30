@@ -39,7 +39,7 @@ The bigger the file is, the longer it takes to calculate the hash.
 For example:
 
 ```powershell
-dotnet hash readme.md --algorithm sha1 --out hex
+dotnet hash readme.md --algorithm sha256 --out hex
 ```
 
 Valid `algorithm`:
