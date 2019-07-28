@@ -51,6 +51,8 @@ The bigger the file is, the longer it takes to calculate the hash.
 				hashBytes = algorithm.ComputeHash(fs);
 			}
 
+			algorithm.Dispose();
+
 			var hashString = GetHashString(hashBytes, this.Output);
 
 			if (hashString == null)

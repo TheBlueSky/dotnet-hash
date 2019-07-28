@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -16,7 +16,7 @@
     <Company>TheBlueSky.Net</Company>
     <Copyright>© 2018 TheBlueSky.Net</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <AssemblyInformationalVersion>1.0 RTM</AssemblyInformationalVersion>
   </PropertyGroup>
