@@ -1,7 +1,7 @@
 dotnet-hash
 ===========
 
-[![NuGet][main-nuget-badge]][main-nuget]
+[![Build Status](https://thebluesky.visualstudio.com/dotnet-hash/_apis/build/status/TheBlueSky.dotnet-hash?branchName=master)](https://thebluesky.visualstudio.com/dotnet-hash/_build/latest?definitionId=2&branchName=master) [![NuGet][main-nuget-badge]][main-nuget]
 
 [main-nuget]: https://www.nuget.org/packages/TheBlueSky.DotNet.Tools.SwiftHash/
 [main-nuget-badge]: https://img.shields.io/nuget/v/TheBlueSky.DotNet.Tools.SwiftHash.svg?style=flat-square&label=nuget
