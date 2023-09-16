@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-hash</ToolCommandName>
     <RootNamespace>TheBlueSky.DotNet.Tools.SwiftHash</RootNamespace>
@@ -16,9 +16,9 @@
     <Company>TheBlueSky.Net</Company>
     <Copyright>© 2018 TheBlueSky.Net</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
-    <AssemblyInformationalVersion>1.0 RTM</AssemblyInformationalVersion>
+    <AssemblyInformationalVersion>2.0 RTM</AssemblyInformationalVersion>
   </PropertyGroup>
 
   <PropertyGroup>
