@@ -1,8 +1,3 @@
-# .NET Core
-# Build and test .NET Core projects.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
 - master
 
@@ -11,12 +6,30 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  nugetSource: 'https://api.nuget.org/v3/index.json'
+  projectFile: './src/TheBlueSky.DotNet.Tools.SwiftHash.csproj'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    command: build
+    projects: '$(projectFile)'
+    arguments: '--configuration Release'
 - task: DotNetCoreCLI@2
   displayName: 'dotnet pack'
   inputs:
-    command: pack
-    packagesToPack: './src/TheBlueSky.DotNet.Tools.SwiftHash.csproj'
+    command: 'pack'
+    packagesToPack: '$(projectFile)'
+    includesymbols: true
+    versioningScheme: 'off'
+- task: DotNetCoreCLI@2
+  displayName: 'Push to NuGet.og'
+  inputs:
+    command: custom
+    custom: nuget
+    arguments: >
+      push $(Build.ArtifactStagingDirectory)/*.nupkg
+      -s $(nugetSource)
+      -k $(nuget.apikey)
+      --skip-duplicate
