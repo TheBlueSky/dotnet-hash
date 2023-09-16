@@ -16,7 +16,7 @@
     <Company>TheBlueSky.Net</Company>
     <Copyright>© 2018 TheBlueSky.Net</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.1</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <AssemblyInformationalVersion>2.0 RTM</AssemblyInformationalVersion>
   </PropertyGroup>
@@ -24,9 +24,10 @@
   <PropertyGroup>
     <PackageId>TheBlueSky.DotNet.Tools.SwiftHash</PackageId>
     <PackageVersion>$(AssemblyVersion)</PackageVersion>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/TheBlueSky/dotnet-hash</PackageProjectUrl>
-    <PackageLicenseUrl>$(PackageProjectUrl)/blob/master/LICENSE.txt</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/TheBlueSky/dotnet-hash.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>MD5;SHA-1;SHA-256;SHA-384;SHA-512</PackageTags>
@@ -38,6 +39,10 @@
 
   <ItemGroup>
     <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../ReadMe.md" Pack="true" PackagePath="/"/>
   </ItemGroup>
 
 </Project>
