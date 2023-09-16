@@ -16,7 +16,7 @@
     <Company>TheBlueSky.Net</Company>
     <Copyright>© 2018 TheBlueSky.Net</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <AssemblyVersion>2.0.2</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <AssemblyInformationalVersion>2.0 RTM</AssemblyInformationalVersion>
   </PropertyGroup>

@@ -1,10 +1,7 @@
 dotnet-hash
 ===========
 
-[![Build Status](https://thebluesky.visualstudio.com/dotnet-hash/_apis/build/status/TheBlueSky.dotnet-hash?branchName=master)](https://thebluesky.visualstudio.com/dotnet-hash/_build/latest?definitionId=2&branchName=master) [![NuGet][main-nuget-badge]][main-nuget]
-
-[main-nuget]: https://www.nuget.org/packages/TheBlueSky.DotNet.Tools.SwiftHash/
-[main-nuget-badge]: https://img.shields.io/nuget/v/TheBlueSky.DotNet.Tools.SwiftHash.svg?style=flat-square&label=nuget
+[![Build](https://img.shields.io/azure-devops/build/thebluesky/c81281f3-f29c-4f59-87e5-dca12f44d979/2)][1] ![NuGet](https://img.shields.io/nuget/v/TheBlueSky.DotNet.Tools.SwiftHash) [![NuGet](https://img.shields.io/nuget/dt/TheBlueSky.DotNet.Tools.SwiftHash)][2]
 
 A simple dotnet tool to calculate hashes for the given file.
 
@@ -12,7 +9,7 @@ The tool calculates MD5, SHA-1, SHA-256, SHA-384, and SHA-512 hashes for any fil
 
 ## Installation
 
-To install the tool you need to install .NET Core 2.1 SDK [v2.1.300](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300) or newer. Once installed, run this command:
+To install the tool you need to install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). Once installed, run this command:
 
 ```powershell
 dotnet tool install TheBlueSky.DotNet.Tools.SwiftHash --global
@@ -54,3 +51,6 @@ Valid `out`:
 
 * `base64`
 * `hex`
+
+[1]: https://thebluesky.visualstudio.com/dotnet-hash/_build/latest?definitionId=2&branchName=master
+[2]: https://www.nuget.org/packages/TheBlueSky.DotNet.Tools.SwiftHash/
