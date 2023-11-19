@@ -10,6 +10,9 @@ variables:
   projectFile: './src/TheBlueSky.DotNet.Tools.SwiftHash.csproj'
 
 steps:
+- task: UseDotNet@2
+  inputs:
+    useGlobalJson: true
 - task: DotNetCoreCLI@2
   displayName: 'dotnet build'
   inputs:
