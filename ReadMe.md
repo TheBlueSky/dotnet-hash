@@ -9,7 +9,7 @@ The tool calculates MD5, SHA-1, SHA-256, SHA-384, and SHA-512 hashes for any fil
 
 ## Installation
 
-To install the tool you need to install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0), [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), or [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). Once installed, run this command:
+To install the tool you need to install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0), [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0), or [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0). Once installed, run this command:
 
 ```powershell
 dotnet tool install TheBlueSky.DotNet.Tools.SwiftHash --global
